@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Finished my latest project - LaraJobs! You can check it out at *[lara-jobs](https://github.com/gitnjole/lara-jobs)
+Finished my latest project - LaraJobs! You can check it out at [lara-jobs](https://github.com/gitnjole/lara-jobs)
