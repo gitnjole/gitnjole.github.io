@@ -6,7 +6,7 @@ subtitle: PHP web developer.
 
 profile:
   align: right
-  image: stare.png
+  image: Stare.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Based in Zagreb, Croatia</p>
@@ -16,6 +16,6 @@ latest_posts: true # includes a list of the newest posts
 social: true # includes social icons at the bottom of the page
 ---
 
-Junior web developer, ex ICT business support specialist.
+_Junior web developer, ex ICT business support specialist._
 
 I bring an analytical mindset and a results-driven approach to my work. Committed to continuous improvement, I am eager to refine my skills and contribute to innovative projects. Open to new opportunities, I am driven by the desire to gain valuable experiences and build a successful career in web development.
