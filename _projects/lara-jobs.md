@@ -8,8 +8,6 @@ category: personal
 ---
 {% raw %}
 
-# LaraJobs
-
 This is a simple job posting board built using the Laravel framework. It allows users to post job listings and browse existing listings. Visitors can view job listings and sort them through tags and search filters.
 
 LaraJobs posting board is a RESTful API application built on top of the Laravel framework and MySQL database. Leveraging Laravel's migration system, the database schema was created and managed effortlessly. The API follows REST principles, providing clear and intuitive endpoints for performing CRUD operations on job listings.
