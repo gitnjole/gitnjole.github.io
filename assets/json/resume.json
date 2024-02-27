@@ -23,7 +23,7 @@
       "position": "Tech Support Agent",
       "startDate": "2022-03-01",
       "endDate": "2022-07-25",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "summary": "Tech support for business customers, technical and logistical problem solving for the company's services",
       "highlights": ["Communication Skills"]
     },
     {
@@ -31,7 +31,7 @@
       "position": "ICT Business Support Specialist",
       "startDate": "2022-07-25",
       "endDate": "2023-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "summary": "Support for ICT related services (including, but not limited to: payment systems, hardware orders, website administration, microsoft azure server administration)",
       "highlights": ["Communication Skills"]
     }
   ],
@@ -127,7 +127,7 @@
       "summary": "Bare bones MVC framework built from scratch",
       "highlights": ["PHP", "Laravel"],
       "startDate": "2024-01-15",
-      "endDate": "2018-02-11",
+      "endDate": "2024-02-11",
       "url": "https://example.com"
     },
     {
