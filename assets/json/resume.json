@@ -43,9 +43,7 @@
       "area": "Information and Business Systems",
       "studyType": "Bachelors",
       "startDate": "2018",
-      "endDate": "2021",
-      "score": "180 ECTS",
-      "note": "Withdrawn"
+      "endDate": "2021"
     },
     {
       "institution": "Poštanska i telekomunikacijska škola",
@@ -67,7 +65,7 @@
         "Laravel",
         "MySQL",
         "MariaDB",
-        "JavaScript - entrance level"
+        "JavaScript - entry level"
       ]
     },
     {
