@@ -21,15 +21,15 @@
     {
       "name": "Hrvatski Telekom d.d.",
       "position": "Tech Support Agent",
-      "startDate": "2022-01-03",
-      "endDate": "2022-25-07",
+      "startDate": "2022-03-01",
+      "endDate": "2022-07-25",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
       "highlights": ["Communication Skills"]
     },
     {
       "name": "Hrvatski Telekom d.d.",
       "position": "ICT Business Support Specialist",
-      "startDate": "2022-25-07",
+      "startDate": "2022-07-25",
       "endDate": "2023-01-01",
       "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
       "highlights": ["Communication Skills"]
@@ -126,23 +126,23 @@
       "name": "Simple MVC",
       "summary": "Bare bones MVC framework built from scratch",
       "highlights": ["PHP", "Laravel"],
-      "startDate": "2024-015-01",
-      "endDate": "2018-11-02",
+      "startDate": "2024-01-15",
+      "endDate": "2018-02-11",
       "url": "https://example.com"
     },
     {
       "name": "LaraJobs",
       "summary": "A job posting website built using Laravel",
       "highlights": ["Laravel", "OOP"],
-      "startDate": "2024-01-02",
-      "endDate": "2024-19-02",
+      "startDate": "2024-02-01",
+      "endDate": "2024-02-19",
       "url": "https://example.com"
     },
     {
       "name": "Quantum Leap",
       "summary": "A file sharing website built using Laravel.",
       "highlights": ["Laravel", "File sharing"],
-      "startDate": "2024-15-02",
+      "startDate": "2024-02-15",
       "endDate": "ongoing",
       "url": "https://example.com"
     }
