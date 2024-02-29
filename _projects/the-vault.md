@@ -6,7 +6,6 @@ img: assets/img/projects/the-vault.png
 importance: 3
 category: personal
 ---
-{% raw %}
 
 "The Vault" is a PHP-based website dedicated to preserving information about music samples, focusing on my own music. The project is crafted with pure PHP for the server back-end, complemented by the front-end components of Tailwind CSS.
 
@@ -44,6 +43,3 @@ Currently my bandcamp account is on a waitlist for approval of use of their API 
 <img src="web/images/samplePage.png">
 
 </p>
-
-
-{% endraw %}
