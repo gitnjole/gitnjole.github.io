@@ -38,8 +38,4 @@ Currently my bandcamp account is on a waitlist for approval of use of their API 
 - Dynamically fetch data from bandcamp to display newly released albums
 - Implement sample timestamps using javascript
 
-<p align="center">
-
-<img src="web/images/samplePage.png">
-
-</p>
+{% include figure.liquid loading="eager" path="assets/img/projects/samplePage.png" title="Sample view" class="img-fluid rounded z-depth-1" %}
