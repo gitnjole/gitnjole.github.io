@@ -12,7 +12,7 @@ category: personal
 
 This project features Restful conventions with a custom built router and service container. In it's current state it is serviceable, but please see the 'Further ideas' section for my thoughts on the future of this project.
 
-![Alt text](../assets/img/projects/splash.png)
+{% include figure.liquid loading="eager" path="assets/img/the-vault.png" title="Main table view" class="img-fluid rounded z-depth-1" %}
 
 ## Key Features
 
