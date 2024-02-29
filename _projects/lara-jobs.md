@@ -19,10 +19,10 @@ LaraJobs posting board is a RESTful API application built on top of the Laravel 
 - **Manage Panel:** Features a bare bones admin panel for editing or deleting job listings, securely.
 
 ### Viewing all listings
-![Alt text](public/images/layout.png)
+![Alt text](assets/img/projects/layout.png)
 
 ### Viewing a listing
-![Alt text](public/images/show.png)
+![Alt text](assets/img/projects/show.png)
 
 ## Installation
 

@@ -14,7 +14,7 @@ category: personal
 
 This project features Restful conventions with a custom built router and service container. In it's current state it is serviceable, but please see the 'Further ideas' section for my thoughts on the future of this project.
 
-![Alt text](web/images/splash.png "Main table design")
+![Alt text](assets/img/projects/splash.png)
 
 ## Key Features
 
