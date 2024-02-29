@@ -7,7 +7,7 @@ subtitle: PHP web developer.
 
 profile:
   align: right
-  image: Stare.png
+  image: profile.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Based in Zagreb, Croatia</p>
