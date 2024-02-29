@@ -8,8 +8,6 @@ category: personal
 ---
 {% raw %}
 
-# The Vault
-
 "The Vault" is a PHP-based website dedicated to preserving information about music samples, focusing on my own music. The project is crafted with pure PHP for the server back-end, complemented by the front-end components of Tailwind CSS.
 
 This project features Restful conventions with a custom built router and service container. In it's current state it is serviceable, but please see the 'Further ideas' section for my thoughts on the future of this project.

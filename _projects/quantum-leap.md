@@ -1,15 +1,13 @@
 ---
 layout: page
 title: Quantum Leap
-description: a file sharing website built using the Laravel framework
+description: a simple file transfer website, currently in production.
 importance: 4
 category: personal
 ---
 {% raw %}
 
-# Quantum Leap
-
-A simple file transfer website, currently in production. Quantum only has basic necessary functions to make the website work, with time it will become a full fledged file transfer web application. Please see [TODO](https://github.com/gitnjole/quantum-leap/blob/master/TODO.md) for current progress.
+Quantum only has basic necessary functions to make the website work, with time it will become a full fledged file transfer web application. Please see [TODO](https://github.com/gitnjole/quantum-leap/blob/master/TODO.md) for current progress.
 
 ## Features
 - **File management:** Users can upload and manage their files

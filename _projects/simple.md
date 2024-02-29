@@ -8,8 +8,6 @@ category: personal
 ---
 {% raw %}
 
-# Simple MVC
-
 SimpleMVC is a lightweight custom PHP framework designed to provide a solid foundation for building robust web applications. This framework is mainly used for education purposes and as a learning tool, built to closely resemble the Laravel framework. 
 
 ## Current version
