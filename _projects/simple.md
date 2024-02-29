@@ -2,6 +2,7 @@
 layout: page
 title: Simple MVC
 description: a barebones MVC framework
+img: assets/img/projects/logo-color.png
 importance: 1
 category: personal
 ---
