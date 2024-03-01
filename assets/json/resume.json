@@ -65,6 +65,7 @@
         "Laravel",
         "MySQL",
         "MariaDB",
+        "Postgres",
         "JavaScript - entry level"
       ]
     },
@@ -86,6 +87,16 @@
         "Independent Work",
         "Problem Solving",
         "Network Administration"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "Proficent",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Linux | Debian",
+        "VS Code",
+        "Beekeeper Studio (DB Manager)"
       ]
     }
   ],
