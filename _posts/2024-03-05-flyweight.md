@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Production-ready fizzbuzz (Part 2)
+title: Production-ready fizzbuzz (Part 1.5)
 date: 2024-03-03
-description: Our first circle of hell, the innocent Flyweight
+description: Assembling our God
 tags: php design pattern
 categories: fizzbuzz
 related_posts: false
@@ -36,3 +36,5 @@ $result = $fizzBuzz->getResult();
 
 print_r($result);
 ```
+
+Onwards to Flyweight!
