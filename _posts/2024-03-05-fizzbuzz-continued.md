@@ -33,14 +33,23 @@ class FizzBuzz {
     }
 }
 
-$numbers = range(1, 3);
-$fizzBuzz = new FizzBuzz($numbers);
-$answer = $fizzBuzz->getAnswer();
+$numbers = range(1, 30);
+$answer = (new FizzBuzz($numbers))->getAnswer();
 
 print_r($answer);
 ```
 
 Behold, the culmination of our efforts, encapsulated within the confines of a class named FizzBuzz. No longer shall our code languish in the squalor of procedural obscurity; it shall ascend to the lofty heights of object-oriented elegance.
+
+```bash
+Array
+(
+    [0] => 1
+    [1] => 2
+    [2] => Fizz
+)
+```
+The output remains the same.
 
 Gone are the days of loose arrays and function calls. Instead, we embrace the order and structure afforded by class-based instantiation. The functionality remains the same and our program is just a bit more complex. We define our array, instantiate the class 
 
