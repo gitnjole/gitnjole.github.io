@@ -39,7 +39,7 @@ $answer = (new FizzBuzz($numbers))->getAnswer();
 print_r($answer);
 ```
 
-Behold, the culmination of our efforts, encapsulated within the confines of a class named FizzBuzz. No longer shall our code languish in the squalor of procedural obscurity; it shall ascend to the lofty heights of object-oriented elegance.
+Yes, the culmination of our efforts, encapsulated within the confines of a class named FizzBuzz. No longer shall our code languish in the squalor of procedural obscurity; it shall ascend to the lofty heights of object-oriented elegance.
 
 ```bash
 Array
