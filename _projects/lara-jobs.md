@@ -49,6 +49,70 @@ potential employees. This feature would require me to rewrite the home page and 
 
 **API Integration**
 
-### Current database design
+## Current database design
 
+### Users table
+```sql
+CREATE TABLE
+  `users` (
+    `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `email` varchar(255) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `logo_path` varchar(255) DEFAULT NULL,
+    `company_name` varchar(255) NOT NULL,
+    `location` varchar(255) NOT NULL,
+    `contact_email` varchar(255) NOT NULL,
+    `website` varchar(255) DEFAULT NULL,
+    `created_at` timestamp NULL DEFAULT NULL,
+    `updated_at` timestamp NULL DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `users_email_unique` (`email`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
+```
 
+The users table has all user/company information shoved inside and there is no distinction between users and companies. I'm actively researching best practices to seperate them into their own distinct tables so I hope I will be able to finish the change soon. In the most recent update on March 11th I've implemented a somewhat acceptable solution which you can see above.
+
+### Listings table
+```sql
+CREATE TABLE
+  `listings` (
+    `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `user_id` bigint(20) unsigned NOT NULL,
+    `title` varchar(255) NOT NULL,
+    `banner_path` varchar(255) DEFAULT NULL,
+    `tags` varchar(255) NOT NULL,
+    `description` longtext DEFAULT NULL,
+    `created_at` timestamp NULL DEFAULT NULL,
+    `updated_at` timestamp NULL DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    KEY `listings_user_id_foreign` (`user_id`),
+    CONSTRAINT `listings_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
+```
+
+The listings table holds only listing relevant information. Posting a banner with your listing isn't a requirement and if you don't have one your company logo will be used instead. If you haven't uploaded a company logo then the default larajobs logo gets displayed so there is always some form of consistency between listings.
+
+All data is being fetched with Laravel's built in method `with()` so the `index` method looks like this:
+```php
+    /**
+     * Method to show all listings
+     *
+     * @param Request $request
+     *
+     * @return \Illuminate\View\View
+     */
+    public function index(Request $request): \Illuminate\View\View
+    {
+        $listings = Listing::with('user')->latest()
+            ->filter($request->only('tag', 'search'))
+            ->simplePaginate(6);
+            
+        return view('listings/index', [
+            'listings' => $listings
+        ]);
+    }
+```
+
+This method allows me to access the latest listings along with their respective `user` data. As the project grows I will have to do further research in optimising fetching all that data as I fear with complexity comes sluggish performance.
+
+That's it for now! If you have any questions or would like to discuss the project with me, you can see the [source code](https://github.com/gitnjole/lara-jobs) or you can reach out to me directly! You can find my contact information on the [about](https://gitnjole.github.io/) page.
