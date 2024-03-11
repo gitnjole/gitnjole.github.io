@@ -39,3 +39,67 @@ Currently my bandcamp account is on a waitlist for approval of use of their API 
 - Implement sample timestamps using javascript
 
 {% include figure.liquid loading="eager" path="assets/img/projects/samplePage.png" title="Sample view" class="img-fluid rounded z-depth-1" %}
+
+## Database design
+### Users table
+```sql
+CREATE TABLE
+  `users` (
+    `user_id` int(11) NOT NULL AUTO_INCREMENT,
+    `username` varchar(25) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `created_at` timestamp NULL DEFAULT current_timestamp(),
+    PRIMARY KEY (`user_id`),
+    UNIQUE KEY `username` (`username`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci
+```
+### Samples table
+```sql
+CREATE TABLE
+  `samples` (
+    `sample_id` int(11) NOT NULL AUTO_INCREMENT,
+    `artist_name` varchar(100) NOT NULL,
+    `song_name` varchar(100) NOT NULL,
+    `album_name` varchar(100) DEFAULT NULL,
+    `sample_type` enum('drums', 'quote', 'reprise', 'sample') NOT NULL,
+    `sampled_artist` varchar(100) NOT NULL,
+    `sampled_song` varchar(100) NOT NULL,
+    `sampled_album` varchar(100) DEFAULT NULL,
+    PRIMARY KEY (`sample_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 12 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci
+```
+
+### Sample links table
+```sql
+CREATE TABLE
+  `sample_links` (
+    `link_id` int(11) NOT NULL AUTO_INCREMENT,
+    `sample_link` char(11) DEFAULT NULL,
+    `sample_id` int(11) NOT NULL,
+    `song_link` char(11) DEFAULT NULL,
+    PRIMARY KEY (`link_id`),
+    UNIQUE KEY `video_id` (`sample_link`),
+    KEY `fk_sample_id` (`sample_id`),
+    CONSTRAINT `fk_sample_id` FOREIGN KEY (`sample_id`) REFERENCES `samples` (`sample_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `sample_links_ibfk_1` FOREIGN KEY (`sample_id`) REFERENCES `samples` (`sample_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 5 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci
+```
+
+I felt it was neccessary to seperate samples from their links and YouTube ID's.
+
+### User submissions table
+```sql
+CREATE TABLE
+  `user_submissions` (
+    `submission_id` int(11) NOT NULL AUTO_INCREMENT,
+    `user_id` int(11) DEFAULT NULL,
+    `sample_id` int(11) DEFAULT NULL,
+    `created_at` timestamp NULL DEFAULT current_timestamp(),
+    PRIMARY KEY (`submission_id`),
+    KEY `user_id` (`user_id`),
+    KEY `sample_id` (`sample_id`),
+    CONSTRAINT `fK_sample_relation` FOREIGN KEY (`sample_id`) REFERENCES `samples` (`sample_id`) ON DELETE CASCADE ON UPDATE CASCADE
+  ) ENGINE = InnoDB AUTO_INCREMENT = 8 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci
+```
+
+That's it for now! If you have any questions or would like to discuss the project with me, you can see the [source code](https://github.com/gitnjole/lara-jobs) or you can reach out to me directly! You can find my contact information on the [about](https://gitnjole.github.io/) page.
