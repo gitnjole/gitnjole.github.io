@@ -6,7 +6,7 @@ img: assets/img/projects/souls-shop.png
 importance: 5
 category: personal
 ---
-Very young stages of project, please see [source code](https://github.com/gitnjole/souls-shop)
+Very young stages of project, please see [source code](https://github.com/gitnjole/souls-shop) or [live demo](https://guileless-dasik-332911.netlify.app/)
 
 {% include figure.liquid loading="eager" path="assets/img/projects/souls-view.png" title="Main table view" class="img-fluid rounded z-depth-1" %}
 
