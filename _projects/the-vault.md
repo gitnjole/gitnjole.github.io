@@ -3,7 +3,7 @@ layout: page
 title: The Vault
 description: A website for displaying used samples in various songs by artists.
 img: assets/img/projects/the-vault.png
-importance: 3
+importance: 5
 category: personal
 ---
 
