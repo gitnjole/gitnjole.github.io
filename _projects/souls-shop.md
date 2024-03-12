@@ -1,6 +1,6 @@
 ---
 layout: page
-title: LaraJobs
+title: Souls Shop
 description: a Vue based Dark Souls III ring build planner
 img: assets/img/projects/souls-shop.png
 importance: 5
