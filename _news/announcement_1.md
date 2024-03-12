@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Officially passed the [Algbera Back-end](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/back-end-developer/) developer course with 92% test accuracy! (Ask me why it wasn't 100%)
+Officially passed the [Algbera Back-end](https://www.algebra.hr/cjelozivotno-obrazovanje/programi/back-end-developer/) developer course with 92% test accuracy!
