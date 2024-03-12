@@ -31,8 +31,8 @@ Please see my github page for source code and file installation.
 
 ## Further ideas
 
-Currently the application is in the working state, but as I find more time to refine it it will become more fleshed out.
-I have a couple ideas for improving this project so you can check back after some time and see if I've done any further work!
+The application is in a working form right now, but it will get more developed as I get more time to improve it.
+I've had a few suggestions for making this project better, so come back later to see if I've finished it!
 
 **Company banners** have been implemented and logos are now permanent throughout your listings!
 - ~~Users need to post their company logo every time they post a job which gets very tedious and storage consuming. I could refine this so that users need to post a company logo which would be permanent throughout their account listings (but changeable), and if they wish they can post additional 'banners' on their listings to customize the look of the listing~~
@@ -41,11 +41,10 @@ I have a couple ideas for improving this project so you can check back after som
 - ~~The user is currently essentially the company, with the field 'name' synonymous with the name of their company. However, this setup can lead to confusion and inefficiencies. To address this, I plan on investing time in redefining the database structure to allow for discrete, precise attributes for users and companies. Additionally, it's important to eliminate the need to retype the company name every time a listing is posted, along with location/company description, etc.~~
 
 **User showcase:** 
-- Instead of making it purely job listing focused, users could also post their own 'willing to work' listings where companies can reach out to
-potential employees. This feature would require me to rewrite the home page and make various tweaks so that the website knows what to display to you based on your account type (for example, if you're a company you might not want to see other companies listing jobs, but you might be interesed in seeing people offering their skills).
+- Users have the option to create their own "willing to work" listings so that employers may get in contact with possible employees, rather than restricting it to just job advertisements. In order for the website to know what to show you based on your account type, I would need to rewrite the home page and make a number of other adjustments (for instance, if you're a company, you might not want to see other companies listing jobs, but you might be interested in seeing people offering their skills).
 
 **Direct apply through application:** 
-- Could mimic LinkedIn features of being able to send a quick message and CV file to the company mail. Can also implement custom questions, for example users would have to answer specific questions like 'How many years of experience do you have with X?'
+- May imitate LinkedIn's capability of emailing a CV file and a brief message to the company mail. It is also possible to create custom questions. For instance, users can be required to respond to a question like, "How many years of experience do you have with X?"
 
 **API Integration**
 
@@ -70,7 +69,7 @@ CREATE TABLE
   ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
 ```
 
-The users table has all user/company information shoved inside and there is no distinction between users and companies. I'm actively researching best practices to seperate them into their own distinct tables so I hope I will be able to finish the change soon. In the most recent update on March 11th I've implemented a somewhat acceptable solution which you can see above.
+There is no separation between users and companies—all user and company data is crammed into the users table. I'm hoping to complete the update soon because I'm currently looking into the best ways to separate them into separate tables while maintaining efficiency and readability. As you can see above, I implemented a workable solution in the most recent release on March 11th
 
 ### Listings table
 ```sql
@@ -90,7 +89,7 @@ CREATE TABLE
   ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
 ```
 
-The listings table holds only listing relevant information. Posting a banner with your listing isn't a requirement and if you don't have one your company logo will be used instead. If you haven't uploaded a company logo then the default larajobs logo gets displayed so there is always some form of consistency between listings.
+Only listing-related data is stored in the listings table. It is not necessary to post a banner with your listing; in the event that you do not have one, your company logo will be shown. To ensure some consistency across postings, the default Larajobs logo is displayed if you haven't uploaded a custom logo.
 
 All data is being fetched with Laravel's built in method `with()` so the `index` method looks like this:
 ```php

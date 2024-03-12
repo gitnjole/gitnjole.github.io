@@ -23,5 +23,5 @@ I bring an analytical mindset and a results-driven approach to my work. Committe
 
 Currently I am:
 - Learning new technologies such as Vue.js, PostgreSQL...
-- Maintaining ongoing projects
-- Mastering Laravel and implementing new features to my projects [lara-jobs](https://github.com/gitnjole/lara-jobs) and [quantum-leap](https://github.com/gitnjole/quantum-leap)
+- Keeping up with ongoing initiatives
+- Gaining expertise with Laravel and adding new features to my projects [lara-jobs](https://github.com/gitnjole/lara-jobs) and [quantum-leap](https://github.com/gitnjole/quantum-leap)

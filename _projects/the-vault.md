@@ -7,9 +7,9 @@ importance: 5
 category: personal
 ---
 
-"The Vault" is a PHP-based website dedicated to preserving information about music samples, focusing on my own music. The project is crafted with pure PHP for the server back-end, complemented by the front-end components of Tailwind CSS.
+"The Vault" is a PHP-based website dedicated to preserving information on music samples, with a focus on my own music. The server back-end of the project is built entirely in PHP, with Tailwind CSS front-end components added.
 
-This project features Restful conventions with a custom built router and service container. In it's current state it is serviceable, but please see the 'Further ideas' section for my thoughts on the future of this project.
+This project uses Restful standards and includes a custom router and service container. In its current condition, it is functional; however, please see the 'Further ideas' section for my thoughts on the project's future.
 
 {% include figure.liquid loading="eager" path="assets/img/projects/the-vault.png" title="Main table view" class="img-fluid rounded z-depth-1" %}
 
@@ -27,7 +27,7 @@ This project features Restful conventions with a custom built router and service
 
 ## On user accessibility
 
-In its current implementation, this is a static website that doesn't allow for registration of new users or adding of samples outsid of administratie accounts. This was done on purpose as the goal of this project is to achieve a web application that interacts with an archive and isn't meant to be taken as a forum where users can submit any content. If you are viewing this project as a **recruiter**, please look into my **other projects** where I showcase my ability to implement such capabilites. Otherwise, please respect the design choice and if you want to implement your own version of this project open for public admission, my code is already capable of handling such functionality, it just needs to be written.
+This website is static in its current implementation and does not support adding samples outside of administrator accounts or registering new users. This was done on purpose because the project's objective is to create a web application that communicates with an archive rather than a forum where users may post information. If you are looking at this project as a potential employer, you should check out my [**other projects**](https://gitnjole.github.io/projects/), where I demonstrate my ability to use these kinds of skills. If not, kindly accept the designer's decision. If you would like to develop an open-source version of this project, my code is already ready to handle that feature; it just needs to be written.
 
 ## Further Ideas
 
