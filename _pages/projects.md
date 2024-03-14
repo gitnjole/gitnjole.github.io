@@ -5,7 +5,7 @@ permalink: /projects/
 nav_order: 2
 description: A growing collection of my personal and work related projects.
 nav: true
-display_categories: [personal]
+display_categories: [personal, work]
 horizontal: false
 ---
 
