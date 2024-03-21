@@ -4,7 +4,7 @@ title: Souls Shop
 description: a Vue based Dark Souls III ring build planner
 img: assets/img/projects/souls-shop.png
 importance: 3
-category: personal
+category: Vue.js
 ---
 Very early stage of project, please see [source code](https://github.com/gitnjole/souls-shop) or [live demo](https://guileless-dasik-332911.netlify.app/)
 

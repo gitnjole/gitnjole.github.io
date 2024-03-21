@@ -4,7 +4,7 @@ title: The Vault
 description: A website for displaying used samples in various songs by artists.
 img: assets/img/projects/the-vault.png
 importance: 5
-category: personal
+category: Core PHP
 ---
 
 "The Vault" is a PHP-based website dedicated to preserving information on music samples, with a focus on my own music. The server back-end of the project is built entirely in PHP, with Tailwind CSS front-end components added.

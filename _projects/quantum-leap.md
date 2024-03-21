@@ -3,7 +3,7 @@ layout: page
 title: Quantum Leap
 description: a simple file transfer website, currently in production.
 importance: 4
-category: personal
+category: Laravel
 ---
 {% raw %}
 

@@ -4,7 +4,7 @@ title: LaraJobs
 description: a job posting website built using the Laravel framework
 img: assets/img/projects/lara-jobs.png
 importance: 2
-category: personal
+category: Laravel
 ---
 This is a simple job posting board built using the Laravel framework. It allows users to post job listings and browse existing listings. Visitors can view job listings and sort them through tags and search filters.
 
