@@ -138,24 +138,21 @@
       "summary": "Bare bones MVC framework built from scratch",
       "highlights": ["PHP", "Laravel"],
       "startDate": "2024-01-15",
-      "endDate": "2024-02-11",
-      "url": "https://example.com"
+      "endDate": "2024-02-11"
     },
     {
       "name": "LaraJobs",
       "summary": "A job posting website built using Laravel",
       "highlights": ["Laravel", "OOP"],
       "startDate": "2024-02-01",
-      "endDate": "2024-02-19",
-      "url": "https://example.com"
+      "endDate": "2024-02-19"
     },
     {
-      "name": "Quantum Leap",
-      "summary": "A file sharing website built using Laravel.",
-      "highlights": ["Laravel", "File sharing"],
-      "startDate": "2024-02-15",
-      "endDate": "ongoing",
-      "url": "https://example.com"
+      "name": "E-charge tracker",
+      "summary": "A Laravel application for tracking card status.",
+      "highlights": ["Laravel", "API"],
+      "startDate": "2024-03-15",
+      "endDate": "ongoing"
     }
   ]
 }
