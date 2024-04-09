@@ -10,7 +10,7 @@ related_posts: false
 
 # Initial design
 
-While working on my project [e-charge-tracker](https://github.com/gitnjole/e-charge-tracker) I wanted to have an animated charging card display where the user would be able to enter the card information before checking its status. I came across a Tailwind component for a simple Payment Card Form created by [David Schinteie](hhttps://davidschinteie.hashnode.dev/tailwind-css-creating-a-simple-and-modern-payment-card-form).
+While working on my project [e-charge-tracker](https://github.com/gitnjole/e-charge-tracker) I wanted to have an animated charging card display where the user would be able to enter the card information before checking its status. I came across a Tailwind component for a simple Payment Card Form created by [David Schinteie](https://davidschinteie.hashnode.dev/tailwind-css-creating-a-simple-and-modern-payment-card-form).
 
 Here is his design of the interactable card:
 {% include figure.liquid loading="eager" path="assets/gifs/payment-form.gif" class="img-fluid rounded z-depth-1" %}
