@@ -80,6 +80,6 @@ The `event.stopPropagation()` is key to prevent click events on the input fields
 
 # The result
 
-With these changes, the card animation behaves perfectly! The card flips when a user clciks on a non-input area and the user can freely enter their details without unexpected flips and data loss.
+With these changes, the card animation behaves perfectly! The card flips when a user clicks on a non-input area and the user can freely enter their details without unexpected flips and data loss.
 
 {% include figure.liquid loading="eager" path="assets/gifs/payment-mine.gif" class="img-fluid rounded z-depth-1" %}
