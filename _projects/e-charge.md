@@ -107,4 +107,4 @@ Next on the list:
 - [x] Implement web interface
 
 
-That's it for now! If you have any questions or would like to discuss the project with me, you can see the [source code](https://github.com/gitnjole/lara-jobs) or you can reach out to me directly! You can find my contact information on the [about](https://gitnjole.github.io/) page.
+That's it for now! If you have any questions or would like to discuss the project with me, you can see the [source code](https://github.com/gitnjole/e-charge-tracker) or you can reach out to me directly! You can find my contact information on the [about](https://gitnjole.github.io/) page.
