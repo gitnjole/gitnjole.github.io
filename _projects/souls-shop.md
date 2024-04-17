@@ -12,6 +12,14 @@ Very early stage of project, please see [source code](https://github.com/gitnjol
 
 This project started out as a simple Vue.js learner tutorial on making a webshop. Pivoted to making a Dark Souls III ring weight and effects calculator \| build planner.
 
+# Known Issues
+
+- **Image loading delay**
+
+A visual bug occurs when the user rapidly clicks the 'next' button. Images load with a delay compared to other data such as name and description. Currently I'm working on optimising the image loading time as well as implement features from the wishlist below.
+
+I suspect the problem is either in lack of caching images or a problem in Vue's reactivity.
+
 # Feature wishlist
 
 - **Changeable versions of rings**
