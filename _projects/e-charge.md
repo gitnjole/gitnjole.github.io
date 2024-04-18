@@ -3,7 +3,7 @@ layout: page
 title: E-charge tracker
 description: A Laravel portfolio project showcasing a web application and API for tracking and verifying charging cards.
 img: assets/img/projects/echarge.png
-importance: 2
+importance: 1
 category: Laravel
 ---
 
