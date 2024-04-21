@@ -84,18 +84,17 @@ Example JSON response:
 CREATE TABLE
   `users` (
     `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
     `email` varchar(255) NOT NULL,
     `password` varchar(255) NOT NULL,
-    `logo_path` varchar(255) DEFAULT NULL,
-    `company_name` varchar(255) NOT NULL,
     `location` varchar(255) NOT NULL,
-    `contact_email` varchar(255) NOT NULL,
+    `pfp_path` varchar(255) DEFAULT NULL,
     `website` varchar(255) DEFAULT NULL,
     `created_at` timestamp NULL DEFAULT NULL,
     `updated_at` timestamp NULL DEFAULT NULL,
     PRIMARY KEY (`id`),
     UNIQUE KEY `users_email_unique` (`email`)
-  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
+  ) ENGINE = InnoDB AUTO_INCREMENT = 10 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
 ```
 
 ### Companies table
@@ -123,17 +122,17 @@ CREATE TABLE
 CREATE TABLE
   `listings` (
     `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
-    `user_id` bigint(20) unsigned NOT NULL,
+    `listable_type` varchar(255) NOT NULL,
+    `listable_id` bigint(20) unsigned NOT NULL,
     `title` varchar(255) NOT NULL,
-    `banner_path` varchar(255) DEFAULT NULL,
     `tags` varchar(255) NOT NULL,
+    `banner_path` varchar(255) DEFAULT NULL,
     `description` longtext DEFAULT NULL,
     `created_at` timestamp NULL DEFAULT NULL,
     `updated_at` timestamp NULL DEFAULT NULL,
     PRIMARY KEY (`id`),
-    KEY `listings_user_id_foreign` (`user_id`),
-    CONSTRAINT `listings_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
-  ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
+    KEY `listings_listable_type_listable_id_index` (`listable_type`, `listable_id`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 41 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
 ```
 
 Only listing-related data is stored in the listings table. It is not necessary to post a banner with your listing; in the event that you do not have one, your company logo will be shown. To ensure some consistency across postings, the default Larajobs logo is displayed if you haven't uploaded a custom logo.
