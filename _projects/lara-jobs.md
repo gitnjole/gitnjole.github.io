@@ -47,6 +47,35 @@ I've had a few suggestions for making this project better, so come back later to
 - May imitate LinkedIn's capability of emailing a CV file and a brief message to the company mail. It is also possible to create custom questions. For instance, users can be required to respond to a question like, "How many years of experience do you have with X?"
 
 **API Integration**
+- Currently only supports a simple GET request to view all active listings. Planned expansion of API integration includes creating a new resource through a request.
+
+Example JSON response:
+```json
+[
+    {
+        "id": 1,
+        "listable_type": "App\\Models\\Company",
+        "listable_id": 5,
+        "title": "Aut sequi error culpa amet et et.",
+        "tags": "laravel, api, js",
+        "banner_path": null,
+        "description": "Aspernatur impedit ea a eum consequuntur molestias. Reprehenderit pariatur est quibusdam optio itaque quos iste. Qui ex reprehenderit est voluptatum officia. Odio odio cupiditate quo sint et voluptatem quaerat. Sit deleniti ratione doloremque vero animi optio qui.",
+        "created_at": "2024-04-21T15:58:52.000000Z",
+        "updated_at": "2024-04-21T15:58:52.000000Z"
+    },
+    {
+        "id": 2,
+        "listable_type": "App\\Models\\Company",
+        "listable_id": 8,
+        "title": "Et architecto quam voluptatem expedita et voluptas aut.",
+        "tags": "laravel, api, js",
+        "banner_path": null,
+        "description": "Ipsum rerum enim eveniet possimus aut. Voluptatum qui nulla quia fugit velit qui hic eius. Inventore architecto ea mollitia laudantium veritatis quia. Autem et repellat fugiat debitis error et. Dolor totam quod nesciunt ut est dolor rem. Adipisci nisi provident expedita aut. Voluptatem molestias eligendi aliquid quo animi. Optio maxime sint optio et. Temporibus qui modi dignissimos in optio omnis vitae.",
+        "created_at": "2024-04-21T15:58:52.000000Z",
+        "updated_at": "2024-04-21T15:58:52.000000Z"
+    }
+]
+```
 
 ## Current database design
 
@@ -69,7 +98,25 @@ CREATE TABLE
   ) ENGINE = InnoDB AUTO_INCREMENT = 2 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
 ```
 
-There is no separation between users and companies—all user and company data is crammed into the users table. I'm hoping to complete the update soon because I'm currently looking into the best ways to separate them into separate tables while maintaining efficiency and readability. As you can see above, I implemented a workable solution in the most recent release on March 11th
+### Companies table
+```sql
+CREATE TABLE
+  `companies` (
+    `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `location` varchar(255) NOT NULL,
+    `email` varchar(255) NOT NULL,
+    `contact_email` varchar(255) NOT NULL,
+    `logo_path` varchar(255) DEFAULT NULL,
+    `website` varchar(255) DEFAULT NULL,
+    `created_at` timestamp NULL DEFAULT NULL,
+    `updated_at` timestamp NULL DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `companies_name_unique` (`name`),
+    UNIQUE KEY `companies_email_unique` (`email`)
+  ) ENGINE = InnoDB AUTO_INCREMENT = 11 DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci
+```
 
 ### Listings table
 ```sql
@@ -102,16 +149,23 @@ All data is being fetched with Laravel's built in method `with()` so the `index`
      */
     public function index(Request $request): \Illuminate\View\View
     {
-        $listings = Listing::with('user')->latest()
-            ->filter($request->only('tag', 'search'))
-            ->simplePaginate(6);
-            
+        $companyListings = Listing::where('listable_type', 'App\Models\Company')
+                                ->latest()
+                                ->filter($request->only('tag', 'search'))
+                                ->simplePaginate(6);
+
+        $userListings = Listing::where('listable_type', 'App\Models\User')
+                                ->latest()
+                                ->filter($request->only('tag', 'search'))
+                                ->simplePaginate(2);
+    
         return view('listings/index', [
-            'listings' => $listings
+            'companyListings' => $companyListings,
+            'userListings' => $userListings
         ]);
     }
 ```
 
-This method allows me to access the latest listings along with their respective `user` data. As the project grows I will have to do further research in optimising fetching all that data as I fear with complexity comes sluggish performance.
+This method allows me to access the latest listings along with their respective creator. As the project grows I will have to do further research in optimising fetching all that data as I fear with complexity comes sluggish performance.
 
 That's it for now! If you have any questions or would like to discuss the project with me, you can see the [source code](https://github.com/gitnjole/lara-jobs) or you can reach out to me directly! You can find my contact information on the [about](https://gitnjole.github.io/) page.
