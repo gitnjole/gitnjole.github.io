@@ -111,9 +111,9 @@ Although this branch hasn't been committed to the GitHub repository, sessions pr
 Working out the design in free time. Least concerning, but would be nice to have componentised session cards.
 
 Next on the list:
-- [ ] Implement charging sessions table so users can view all past charging sessions from a given card
 - [ ] Refactor controllers to adhere to restful principles
 - [ ] Optimise database record fetching
+- [x] Implement charging sessions table so users can view all past charging sessions from a given card
 - [x] Implement API requests to fetch card details
 - [x] Set up database
 - [x] Implement web interface
