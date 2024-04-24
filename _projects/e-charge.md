@@ -21,9 +21,7 @@ This Laravel application offers a convenient way to manage and track your chargi
 
 ## API Usage
 
-1. Cards
-
-## Get a specific card
+### Get a specific card
 
 - Method: `GET`
 - Route: `/card`
@@ -45,9 +43,7 @@ This Laravel application offers a convenient way to manage and track your chargi
 }
 ```
 
-2. Stores
-
-## Get all Stores
+### Get all Stores
 
 - Method: `GET`
 - Route: `/stores`
@@ -70,7 +66,7 @@ This Laravel application offers a convenient way to manage and track your chargi
 ]
 ```
 
-## Get a specific Store
+### Get a specific Store
 - Method: `GET`,
 - Route: `/stores`,
 - Parameters:
@@ -98,6 +94,21 @@ This Laravel application offers a convenient way to manage and track your chargi
 ]
 ```
 
+## Currently working on:
+
+`SESSIONS`
+- [x] Implement session record tracking
+- [] Implement session web controller
+- [x] Implement session API controller
+- [] Implement listeners and events
+
+Although this branch hasn't been committed to the GitHub repository, sessions presently function and can be initiated by calling the ApiSessionController, which will add a session record and deduct credit amount from the provided card. I am currently not satisfied with the level of complexity within the controller and am looking into `listeners` and `events` to streamline the credit deduction procedure from cards.
+
+`WEB-UI`
+- [x] Refactor web layout and design
+- [] Implement components and session-specific cards
+
+Working out the design in free time. Least concerning, but would be nice to have componentised session cards.
 
 Next on the list:
 - [ ] Implement charging sessions table so users can view all past charging sessions from a given card
