@@ -21,18 +21,18 @@
     {
       "name": "Hrvatski Telekom d.d.",
       "position": "Tech Support Agent",
-      "startDate": "2022-03-01",
-      "endDate": "2022-07-25",
-      "summary": "Tech support for business customers, technical and logistical problem solving for the company's services",
-      "highlights": ["Communication Skills"]
+      "startDate": "2022",
+      "endDate": "2022",
+      "summary": "Focused on resolving technical difficulties and challenges encountered by business clients",
+      "highlights": ["Communication skills", "Problem solving", "Sales skills"]
     },
     {
       "name": "Hrvatski Telekom d.d.",
       "position": "ICT Business Support Specialist",
-      "startDate": "2022-07-25",
-      "endDate": "2023-01-01",
-      "summary": "Support for ICT related services (including, but not limited to: payment systems, hardware orders, website administration, microsoft azure server administration)",
-      "highlights": ["Communication Skills"]
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Provided business clients with phone support linked to ICT, such as payment systems, hardware orders, website administration, and Microsoft Azure server administration.",
+      "highlights": ["Teamwork", "Client focus", "Technical knowledge"]
     }
   ],
   "education": [
@@ -41,7 +41,7 @@
       "location": "Varaždin, Croatia",
       "url": "https://www.foi.unizg.hr/en",
       "area": "Information and Business Systems",
-      "studyType": "Bachelors",
+      "studyType": "B.Sc.Information and Business Systems - Withdrawn",
       "startDate": "2018",
       "endDate": "2021"
     },
@@ -66,7 +66,8 @@
         "MySQL",
         "MariaDB",
         "Postgres",
-        "JavaScript - entry level"
+        "JavaScript",
+        "Vue"
       ]
     },
     {
@@ -96,7 +97,7 @@
       "keywords": [
         "Linux | Debian",
         "VS Code",
-        "Beekeeper Studio (DB Manager)"
+        "Beekeeper Studio"
       ]
     }
   ],
@@ -137,22 +138,19 @@
       "name": "Simple MVC",
       "summary": "Bare bones MVC framework built from scratch",
       "highlights": ["PHP", "Laravel"],
-      "startDate": "2024-01-15",
-      "endDate": "2024-02-11"
+      "startDate": "2024-01-15"
     },
     {
       "name": "LaraJobs",
       "summary": "A job posting website built using Laravel",
       "highlights": ["Laravel", "OOP"],
-      "startDate": "2024-02-01",
-      "endDate": "2024-02-19"
+      "startDate": "2024-02-01"
     },
     {
       "name": "E-charge tracker",
       "summary": "A Laravel application for tracking card status.",
       "highlights": ["Laravel", "API"],
-      "startDate": "2024-03-15",
-      "endDate": "ongoing"
+      "startDate": "2024-03-15"
     }
   ]
 }
