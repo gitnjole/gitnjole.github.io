@@ -6,8 +6,7 @@
     "summary": "Dynamic and dedicated Junior PHP Developer with a strong foundation in computer science",
     "location": {
       "postalCode": "10040",
-      "city": "Zagreb",
-      "region": "Dubrava"
+      "city": "Zagreb"
     },
     "profiles": [
       {
@@ -33,6 +32,14 @@
       "endDate": "2023",
       "summary": "Provided business clients with phone support linked to ICT, such as payment systems, hardware orders, website administration, and Microsoft Azure server administration.",
       "highlights": ["Teamwork", "Client focus", "Technical knowledge"]
+    },
+    {
+      "name": "mStart Plus d.o.o.",
+      "position": "Junior Backend Developer",
+      "startDate": "2024",
+      "endDate": "2024",
+      "summary": "Focused on backend services development and maintenance",
+      "highlights": ["Spryker", "Redis", "Symfony"]
     }
   ],
   "education": [
@@ -63,26 +70,29 @@
       "keywords": [
         "PHP",
         "Laravel",
+        "Symfony",
         "MySQL",
         "MariaDB",
-        "Postgres",
-        "JavaScript",
-        "Vue"
+        "AWS",
+        "Redis",
+        "RabbitMQ",
+        "JavaScript"
       ]
     },
     {
       "name": "Tools",
-      "level": "Proficent",
+      "level": "Proficient",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Git",
         "GitHub",
-        "Docker"
+        "Docker",
+        "AWS"
       ]
     },
     {
       "name": "Supporting Skills",
-      "level": "Proficent",
+      "level": "Proficient",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Independent Work",
@@ -92,7 +102,7 @@
     },
     {
       "name": "Tools",
-      "level": "Proficent",
+      "level": "Proficient",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Linux | Debian",

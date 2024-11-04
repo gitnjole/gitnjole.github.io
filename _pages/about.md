@@ -22,6 +22,6 @@ _Junior web developer, former ICT business support specialist._
 I bring an analytical mindset and a results-driven approach to my work. Committed to continuous improvement, I am eager to refine my skills and contribute to innovative projects. Open to new opportunities, I am driven by the desire to gain valuable experiences and build a successful career in web development.
 
 Currently I am:
-- Learning new technologies such as Vue.js, PostgreSQL and API development
+- Learning new technologies
 - Keeping up with ongoing initiatives
 - Gaining expertise with Laravel and adding new features to my projects [lara-jobs](https://github.com/gitnjole/lara-jobs) and [e-charge-tracker](https://github.com/gitnjole/e-charge-tracker)
