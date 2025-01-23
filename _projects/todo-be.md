@@ -3,7 +3,7 @@ layout: page
 title: Todo BE
 description: A baseline Symfony project showcasing my current level of expertise.
 img: assets/img/projects/todo-be.png
-importance: 1
+importance: 4
 category: Symfony
 ---
 
