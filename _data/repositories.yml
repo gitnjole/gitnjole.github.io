@@ -2,9 +2,9 @@ github_users:
   - gitnjole
 
 github_repos:
+  - gitnjole/todo-be
   - gitnjole/e-charge-tracker
   - gitnjole/lara-jobs
   - gitnjole/simple-mvc
   - gitnjole/souls-shop
-  - gitnjole/quantum-leap
   - gitnjole/the-vault
