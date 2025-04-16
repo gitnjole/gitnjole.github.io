@@ -5,7 +5,7 @@ permalink: /projects/
 nav_order: 2
 description: A growing collection of my personal and work related projects.
 nav: true
-display_categories: [Vue.js, Laravel, Core PHP]
+display_categories: [Linux, Vue.js, Laravel, Core PHP]
 horizontal: false
 ---
 
